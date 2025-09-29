@@ -23,6 +23,7 @@ body{
     border: 1px solid var(--secondary-color);
     border-radius: 15px;
     margin: 120px;
+    text-align: center;
 }
 
 .buttons{
