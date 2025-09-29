@@ -4,56 +4,54 @@ const paper = document.querySelector(".paper");
 const scissors = document.querySelector(".scissors");
 
 const gameArray = ["Rock", "Paper", "Scissors"];
-let randomValue = Math.floor(Math.random() * gameArray.length);
-const computer = gameArray[randomValue];
 
-const game_play = () => {
-    if (computer == "Rock" && rock) {
+
+const game_play = (playerChoice) => {
+    let randomValue = Math.floor(Math.random() * gameArray.length);
+    const computer = gameArray[randomValue];
+    if (computer == "Rock" &&  playerChoice == "Rock") {
         gameScreen.innerText = `Computer choosed: ${computer} \n\nTie \n\nYou chosed: Rock`;
     }
-    if (computer == "Paper" && rock) {
+    if (computer == "Paper" && playerChoice == "Rock") {
         gameScreen.innerText = `Computer choosed: ${computer} \n\nComputer wins! \n\nYou chosed: Rock`;
     }
-    if (computer == "Scissors" && rock) {
+    if (computer == "Scissors" && playerChoice == "Rock") {
         gameScreen.innerText = `Computer choosed: ${computer} \n\nYou Win! \n\nYou chosed: Rock`;
     }
 
-    if (computer == "Rock" && paper) {
+    if (computer == "Rock" && playerChoice == "Paper") {
         gameScreen.innerText = `Computer choosed: ${computer} \n\nYou Win! \n\nYou chosed: Paper`;
     }
-    if (computer == "Paper" && paper) {
+    if (computer == "Paper" && playerChoice == "Paper") {
         gameScreen.innerText = `Computer choosed: ${computer} \n\nTie \n\nYou chosed: Paper`;
 
     }
-    if (computer == "Scissors" && paper) {
+    if (computer == "Scissors" && playerChoice == "Paper") {
         gameScreen.innerText = `Computer choosed: ${computer} \n\nComputer wins! \n\nYou chosed: Paper`;
     }
 
-    if (computer == "Rock" && scissors) {
+    if (computer == "Rock" && playerChoice == "Scissors") {
         gameScreen.innerText = `Computer choosed: ${computer} \n\nComputer wins! \n\nYou chosed: Scissors`;
     }
-    if (computer == "Paper" && scissors) {
+    if (computer == "Paper" && playerChoice == "Scissors") {
         gameScreen.innerText = `Computer choosed: ${computer} \n\nYou Win! \n\nYou chosed: Scissors`;
     }
-    if (computer == "Scissors" && scissors) {
+    if (computer == "Scissors" && playerChoice == "Scissors") {
         gameScreen.innerText = `Computer choosed: ${computer} \n\nTie \n\nYou chosed: Scissors`;
     }
 
 }
 
 rock.addEventListener("click", () => {
-    gameArray[0];
-    game_play()
+    game_play("Rock")
 
 })
 
 paper.addEventListener("click", () => {
-    gameArray[1];
-    game_play();
+    game_play("Paper");
 
 })
 
 scissors.addEventListener("click", () => {
-    gameArray[2];
-    game_play()
+    game_play("Scissors");
 })

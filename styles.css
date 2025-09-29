@@ -16,6 +16,13 @@ body{
     justify-content: center;
 }
 
+.score {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50vw;
+    font-size: 20px;
+}
+
 .game-screen{
     min-width: 50vw;
     height: 150px;
