@@ -1,0 +1,15 @@
+:root{
+    --primary-color: #0D2B0A;
+    --secondary-color: #D1C630;
+}
+
+body{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    min-height: 90vh;
+}
+
+.game-screen{
+    width: 250px;
+    height: 150px;
+}
