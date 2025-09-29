@@ -9,7 +9,29 @@ body{
     min-height: 90vh;
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .game-screen{
     width: 250px;
     height: 150px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50vw;
+}
+
+.btn{
+    border:5px solid var(--secondary-color);
+    border-radius: 15px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    width: 150px;
+    height: 50px;
 }
