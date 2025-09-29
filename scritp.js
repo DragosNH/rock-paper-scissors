@@ -9,34 +9,34 @@ const computer = gameArray[randomValue];
 
 const game_play = () => {
     if (computer == "Rock" && rock) {
-        gameScreen.innerText = `Computer choosed: ${computer} \n\nTie`;
+        gameScreen.innerText = `Computer choosed: ${computer} \n\nTie \n\nYou chosed: Rock`;
     }
     if (computer == "Paper" && rock) {
-        gameScreen.innerText = `Computer choosed: ${computer} \n\nComputer wins!`;
+        gameScreen.innerText = `Computer choosed: ${computer} \n\nComputer wins! \n\nYou chosed: Rock`;
     }
     if (computer == "Scissors" && rock) {
-        gameScreen.innerText = `Computer choosed: ${computer} \n\nYou Win!`;
+        gameScreen.innerText = `Computer choosed: ${computer} \n\nYou Win! \n\nYou chosed: Rock`;
     }
 
     if (computer == "Rock" && paper) {
-        gameScreen.innerText = `Computer choosed: ${computer} \n\nYou Win!`;
+        gameScreen.innerText = `Computer choosed: ${computer} \n\nYou Win! \n\nYou chosed: Paper`;
     }
     if (computer == "Paper" && paper) {
-        gameScreen.innerText = `Computer choosed: ${computer} \n\nTie`;
+        gameScreen.innerText = `Computer choosed: ${computer} \n\nTie \n\nYou chosed: Paper`;
 
     }
     if (computer == "Scissors" && paper) {
-        gameScreen.innerText = `Computer choosed: ${computer} \n\nComputer wins!`;
+        gameScreen.innerText = `Computer choosed: ${computer} \n\nComputer wins! \n\nYou chosed: Paper`;
     }
 
     if (computer == "Rock" && scissors) {
-        gameScreen.innerText = `Computer choosed: ${computer} \n\nComputer wins!`;
+        gameScreen.innerText = `Computer choosed: ${computer} \n\nComputer wins! \n\nYou chosed: Scissors`;
     }
     if (computer == "Paper" && scissors) {
-        gameScreen.innerText = `Computer choosed: ${computer} \n\nYou Win!`;
+        gameScreen.innerText = `Computer choosed: ${computer} \n\nYou Win! \n\nYou chosed: Scissors`;
     }
     if (computer == "Scissors" && scissors) {
-        gameScreen.innerText = `Computer choosed: ${computer} \n\nTie`;
+        gameScreen.innerText = `Computer choosed: ${computer} \n\nTie \n\nYou chosed: Scissors`;
     }
 
 }
